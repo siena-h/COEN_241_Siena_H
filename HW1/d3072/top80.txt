@@ -1,0 +1,15 @@
+top - 14:03:21 up 4 days, 14:27,  0 users,  load average: 2.54, 1.95, 1.6
+Tasks:   8 total,   1 running,   7 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.7 us,  0.5 sy,  0.0 ni, 98.6 id,  0.2 wa,  0.0 hi,  0.1 si,  
+KiB Mem :  6420396 total,  1223892 free,   713568 used,  4482936 buff/cac
+KiB Swap:  2097152 total,  2097152 free,        0 used.  5357552 avail Me
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+
+   36 root      20   0  110848   7264   6068 S 400.0  0.1   1:00.32
+    1 root      20   0    4504    752    680 S   0.0  0.0   0:00.17
+   10 root      20   0    4504    744    672 S   0.0  0.0   0:00.00
+   12 root      20   0    4504   1632   1548 S   0.0  0.0   0:00.00
+   33 root      20   0    4376    704    636 S   0.0  0.0   0:00.00
+   34 root      20   0    4504    840    772 S   0.0  0.0   0:00.00
+   35 root      20   0    4504    704    632 S   0.0  0.0   0:00.00
+   46 root      20   0   36532   3000   2640 R   0.0  0.0   0:00.00
