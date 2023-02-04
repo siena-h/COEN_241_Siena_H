@@ -2,13 +2,13 @@
 #Siena Hanna
 #Shell program for fileio tests. First argument to sh mode.sh is the test mode (ex: rndrw), second argument is total file size (ex: "1G")
 #formatting: sh mode.sh <fileio mode> <total file size>
-#Time set to 1.5 min maximum (90 seconds). 
+#Time set to 0.5 min maximum (30 seconds). 
 
 echo "TEST START: $2, default file number (128 Files)"
 
 sysbench fileio --file-total-size=$2 --file-test-mode=$1 prepare
 
-sysbench fileio --time=45 --file-total-size=$2 --file-test-mode=$1 run
+sysbench fileio --time=30 --file-total-size=$2 --file-test-mode=$1 run
 
 sleep 5
 
