@@ -1,4 +1,5 @@
-
+#NOT FOR RUNNING EXPERIMENTS (FOR FILE ORGANIZATION AFTERWARDS)
+#Siena Hanna
 #call: sh .sh <mode> <size>
 
 
