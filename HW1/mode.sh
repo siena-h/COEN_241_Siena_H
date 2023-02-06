@@ -1,6 +1,6 @@
 #!/bin/bash
 #Siena Hanna
-#Shell program for fileio tests. First argument to sh mode.sh is the test mode (ex: rndrw), second argument is total file size (ex: "1G")
+#Shell program for fileio tests. Lowest level in the hierarchy. First argument to sh mode.sh is the test mode (ex: rndrw), second argument is total file size (ex: "1G")
 #formatting: sh mode.sh <fileio mode> <total file size>
 #Time set to 0.5 min maximum (30 seconds). 
 
@@ -10,11 +10,11 @@ sysbench fileio --file-total-size=$2 --file-test-mode=$1 prepare
 
 sysbench fileio --time=30 --file-total-size=$2 --file-test-mode=$1 run
 
-sleep 5
+#sleep 5
 
 sysbench fileio --file-total-size=$2 --file-test-mode=$1 cleanup
 
-#for differnet file sizes (takes way too long even with time limit)
+#for differnet file sizes test (takes way too long even with time limit)
 #f=1
 #inc=64 #file size increases by a factor of 16
 #while [ $f -le 64 ]
