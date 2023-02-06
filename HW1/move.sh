@@ -1,5 +1,6 @@
+#SIena Hanna
+#automates the movement of top output files to the proper directory, for post-experiment organization
 #call: sh .sh <threads> <memory>
-
 
 i=0
 end=5
