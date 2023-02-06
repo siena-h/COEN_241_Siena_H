@@ -1,4 +1,5 @@
-#SIena Hanna
+#NOT FOR RUNNING EXPERIMENTS
+#Siena Hanna
 #automates the movement of top output files to the proper directory, for post-experiment organization
 #call: sh .sh <threads> <memory>
 
