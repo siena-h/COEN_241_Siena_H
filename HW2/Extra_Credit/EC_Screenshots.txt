@@ -1,0 +1,13 @@
+Name: Siena Hanna
+Description: This file explains the screenshots in this directory. 
+
+ngrok.png: shows the ngrok public IP for OpenFaaS Gateway, which is important since this <ngrok address>/function/slack-<interactive/request> is used for the Slack app
+
+Slack_1.png: shows the first part of running the Slack app before the button is pushed.
+
+Slack_2.png: shows the second part of the Slack app after the button is pushed. 
+
+Slack_command.png: shows the slash command I set up for my Slack app (./test241)
+	Note: I ran my app inside the SCU ACM-W Slack in the #random channel. The slash command was /test241. 
+
+

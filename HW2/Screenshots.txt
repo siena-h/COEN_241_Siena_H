@@ -1,0 +1,22 @@
+Name: Siena Hanna
+Description: This is the Screenshot explanation file for the .png files in this directory. 
+
+invoke_figlet.png: shows results of invoking figlet for input "Hello, FaaS, world from Siena"
+	Note: I decided to pass the string "Hello, FaaS, world from Siena" with my name as further proof besides the screenshot that I was the one running it. 
+	From the information provided in the faas-figlet GitHub, it appears the purpose of figlet is to create a serverless ascii banner to display the string that was entered, and this is exactly what happened. 
+	
+invoke_slack_interactive*.png: All screenshots in this group represent various examples/results of invoking the slack-interactive function
+	invoke_slack_interactive_curl.png: shows results of invoking slack-interactive with curl with JSON-format input from file
+	invoke_slack_interactive_faas.png: shows results of invoking slack-interactive with JSON-format input file piped with stdin to faas-cli invoke
+	invoke_slack_interactive_fail.png: shows the results of not using JSON-format input, which causes an error in the slack-interactive function
+	
+invoke_slack_request*.png: All screenshots in this group represent various examples/results of invoking the slack-request function
+	invoke_slack_request_curl.png: shows how to invoke the slack-request function using curl and resulting output
+	invoke_slack_request_faas.png: shows results of invoking slack-request using faas-cli invoke
+
+journalctl.png: shows the results of the command "sudo journalctl -u faasd --lines 40" 
+	Notes: prometheus is on port 9090 and gateway (OpenFaaS) is on port 8080
+	
+OpenFaaS.png: shows the OpenFaaS UI with figlet, slack-request, and slack-interactive all deployed
+	
+Extra Credit: Extra Credit Screenshots have their own description/list file, EC_Screenshots.txt in the Extra_Credit directory

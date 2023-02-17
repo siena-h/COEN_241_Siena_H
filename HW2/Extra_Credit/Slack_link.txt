@@ -1,0 +1,10 @@
+Name: Siena Hanna
+Description: This file provides an invite link to the Slack channel for app verification. 
+
+Note: I ran my app inside the SCU ACM-W Slack in the #random channel. The slash command was /test241. 
+
+Here I have provided an invite link to that Slack so that you can check out the app yourself if necessary. As I doubt I will be running ngrok 24/7 from now until the homework is graded, it may not be possible to verify operation, but I should be able to add you as a collaborator to the app after you have joined. 
+
+Invite link: https://join.slack.com/t/scuacmw/shared_invite/zt-1pf5nsxl2-84QYsCq2GskOh3Xjuv8ERQ
+
+

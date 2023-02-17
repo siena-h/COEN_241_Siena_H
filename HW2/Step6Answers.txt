@@ -1,0 +1,30 @@
+Name: Siena Hanna
+Answers for Step 6 of COEN 241 Homework 2
+
+0. Instead of the usual build, I had to run "sudo DOCKER-BUILDKIT=1 faas-cli build -f ./<slack function>.yml --no-cache --build-arg platform=linux/arm64/v8"
+	This was because the platform it tried to use with build (linux/amd64) was not correct for the computer I used for this assignment and caused errors while trying to build. 
+
+1. What is the command to invoke the slack-request function?
+	a. Via curl: curl http://127.0.0.1:8080/function/slack-request 
+		(invoke_slack_request_curl.png)
+	b. Via faas-cli: faas-cli invoke slack-request
+		(invoke_slack_request_faas.png)
+	
+2. What is the output you see when you invoke the slack-request function?
+	The output is the JSON information in handler.py. If the app is run in Slack, this shows up as an image with text and buttons, but unfortunately that does not happen in terminal. 
+	
+3. What is the command to invoke the slack-interactive function?
+	a. Via curl: curl -d @example.json http://127.0.0.1:8080/function/slack-interactive
+		(invoke_slack_interactive_faas.png)
+	b. Via faas-cli: cat example.json | faas-cli invoke slack-interactive 
+		(invoke_slack_interactive_curl.png)
+Note: if no JSON format is provided in request, slack-interactive will have an error (see invoke_slack_interactive_fail.png). Note that example.json actually uses the output from slack-request. However, you can also use -d '{}' with curl or echo "{}" instead of cat before faas-cli, which would use an empty JSON format message rather than one with contents. 
+		
+4. What is the output you see when you invoke the slack-interactive function?
+	Assuming that the slack-interactive function is invoked with a JSON format message, then it also outputs its own JSON data from handler.py. Again, if this is actually done in Slack, it translates properly, but in terminal it does not appear to. 
+	
+5. How would you pass different arguments to the functions?
+	Different arguments can be passed using the -d option for curl followed by said argument (either in quotes or @<filename>) or piping via stdin into faas-cli invoke, as shown above for 3. 
+	
+6. How would you change the slack-interactive function to react to different inputs?
+	Currently, it is set up to load a JSON format using the json.loads function. This appears to be the line (16) at which the error occurs if not using JSON format in the input, and it is likely that and potentially the prior line that should be changed if we wanted to change it for different inputs. For example, if we wanted to use YAML format instead, we might want to use yaml.safe_load(urlstring) instead of json.loads(urlstring). 
