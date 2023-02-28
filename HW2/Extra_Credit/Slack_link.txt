@@ -9,8 +9,3 @@ Request URL (in Slash Command): https://a461-129-210-115-4.ngrok.io/function/sla
 More information if necessary: 
 I ran my app inside the SCU ACM-W Slack in the #random channel at https://app.slack.com/client/T010YUUTTGC/C0111EMJFHD. The slash command was /test241. 
 
-Here I have provided an invite link to that Slack so that you can check out the app yourself if necessary. As I doubt I will be running ngrok 24/7 from now until the homework is graded, it may not be possible to verify operation, but I should be able to add you as a collaborator to the app after you have joined so you can see the configurations if necessary. 
-
-Invite link: https://join.slack.com/t/scuacmw/shared_invite/zt-1pf5nsxl2-84QYsCq2GskOh3Xjuv8ERQ
-
-
